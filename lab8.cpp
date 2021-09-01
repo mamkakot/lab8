@@ -121,6 +121,8 @@ int main()
     {
         int size_of_string = find_all_entries(lines[i], ' ');
         words = split(lines[i], ' ', size_of_string);
+        std::cout << "Самое длинное слово в " << i << "-й строке" << find_longest_word(words, size_of_string) << std::endl;
+
         longest_words[i] = find_longest_word(words, size_of_string);
     }
 
